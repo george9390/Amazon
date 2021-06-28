@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="27633" started-at="2021-06-28T08:19:12Z" finished-at="2021-06-28T08:19:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="27633" started-at="2021-06-28T08:19:12Z" finished-at="2021-06-28T08:19:39Z">
+      <class name="com.am.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.am.qa.testcases.HomePageTest@544fe44c]" name="setup" is-config="true" duration-ms="8986" started-at="2021-06-28T13:49:12Z" finished-at="2021-06-28T13:49:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="homePageTitleTest()[pri:0, instance:com.am.qa.testcases.HomePageTest@544fe44c]" name="homePageTitleTest" duration-ms="24" started-at="2021-06-28T13:49:21Z" finished-at="2021-06-28T13:49:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.am.qa.testcases.HomePageTest@544fe44c]" name="tearDown" is-config="true" duration-ms="911" started-at="2021-06-28T13:49:21Z" finished-at="2021-06-28T13:49:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.am.qa.testcases.HomePageTest@544fe44c]" name="setup" is-config="true" duration-ms="5691" started-at="2021-06-28T13:49:22Z" finished-at="2021-06-28T13:49:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="itemsearch()[pri:0, instance:com.am.qa.testcases.HomePageTest@544fe44c]" name="itemsearch" duration-ms="11308" started-at="2021-06-28T13:49:27Z" finished-at="2021-06-28T13:49:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- itemsearch -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.am.qa.testcases.HomePageTest@544fe44c]" name="tearDown" is-config="true" duration-ms="671" started-at="2021-06-28T13:49:39Z" finished-at="2021-06-28T13:49:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.am.qa.testcases.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

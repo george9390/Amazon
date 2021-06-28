@@ -1,0 +1,72 @@
+package com.am.qa.testcases;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.am.qa.base.TestBase;
+import com.am.qa.pages.HomePage;
+import com.am.qa.pages.ItemSelected;
+import com.am.qa.pages.LoginPage;
+import com.am.qa.pages.PaymentPage;
+
+public class LoginPageTest extends TestBase{
+	
+	
+	HomePage homePage;
+	ItemSelected itemSelected;
+	LoginPage loginPage;
+	PaymentPage paymentPage;
+	
+	public LoginPageTest() {
+		super();
+	}
+	
+	
+	@BeforeTest
+	public void setUp() throws Exception {
+		initialization();
+		homePage=new HomePage();
+		itemSelected=homePage.Searchitem("mask");
+		ArrayList<String> newTb = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(newTb.get(1));
+		loginPage = itemSelected.logintobuy();
+	}
+	
+	/*@Test(priority=1)
+	public void verifyItemPageTitle() {
+		String Itemtitle = loginPage.validatePageTitle();
+		Assert.assertEquals(Itemtitle, "DALUCI Non Woven Fabric Disposable Face Mask With Nose Clip (Blue, Without Valve, Pack of 100) For Unisex: Amazon.in: Clothing & Accessories");
+	}*/
+	
+	@Test
+	public void clicktoPayment() throws IOException {
+		paymentPage = loginPage.afterlogin();
+	}
+	
+	
+	
+	
+
+	
+	@AfterTest
+	public void tearDown() {
+		driver.quit();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}
